@@ -11,119 +11,336 @@ export default async function HomePage() {
 
   return (
     <div className="flex flex-col">
-      {/* Hero */}
-      <section className="relative w-full h-screen flex items-end pb-16 px-6 md:px-10 overflow-hidden">
-        <div className="absolute inset-0 bg-background" />
-        {/* ASOM large text */}
-        <div className="absolute inset-0 flex items-center justify-center select-none pointer-events-none">
+
+      {/* ── HERO ── */}
+      <section className="relative w-full h-screen flex flex-col justify-end pb-20 px-6 md:px-10 overflow-hidden bg-background">
+        {/* Big ASOM background */}
+        <div
+          className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
+          aria-hidden
+        >
           <span
-            className="font-satoshi font-bold text-white/5 leading-none tracking-wide select-none"
-            style={{ fontSize: "clamp(120px, 25vw, 400px)", letterSpacing: "0.02em" }}
+            style={{
+              fontSize: "clamp(160px, 32vw, 480px)",
+              fontFamily: "Satoshi, sans-serif",
+              fontWeight: 700,
+              color: "rgba(255,255,255,0.03)",
+              letterSpacing: "0.05em",
+              lineHeight: 1,
+            }}
           >
             ASOM
           </span>
         </div>
-        <div className="relative z-10 max-w-2xl">
-          <h1
-            className="font-satoshi font-bold text-white leading-none tracking-tight"
-            style={{ fontSize: "clamp(48px, 8vw, 80px)", letterSpacing: "-0.03em" }}
-          >
-            We are many, our talents are infectious.
-          </h1>
-          <p className="mt-6 text-xs uppercase tracking-widest text-white/50">
-            We need someone to infect.
-          </p>
-          <Link
-            href="https://forms.asom.space/entertheforge"
-            target="_blank"
-            className="inline-block mt-8 text-xs uppercase tracking-widest border border-white/30 px-6 py-3 hover:border-white transition-colors"
-          >
-            Be Part of The Forge
-          </Link>
-        </div>
-      </section>
 
-      {/* About */}
-      <section className="px-6 md:px-10 py-20 bg-white text-background">
-        <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-          <div className="flex flex-col gap-8">
-            <h2
-              className="font-satoshi font-bold leading-none tracking-tight"
-              style={{ fontSize: "clamp(36px, 5vw, 80px)", letterSpacing: "-0.03em" }}
-            >
-              A forge of 100+ artists
-            </h2>
-            <p className="text-xs uppercase tracking-wider leading-relaxed text-background/60">
-              ASOM is a forge of over 100 polidisciplinary artists that value the progress of modern art forms over anything. The sole purpose of ASOM is to include every niche and branch of creativity possible, in order to provide an invaluable source of inspiration, fueled by the relentless desire for creation of unique minds.
-            </p>
+        {/* Hero text */}
+        <div className="relative z-10 max-w-3xl">
+          <p
+            style={{
+              fontSize: "clamp(13px, 1vw, 14px)",
+              fontFamily: "Satoshi, sans-serif",
+              fontWeight: 500,
+              letterSpacing: "0.02em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.4)",
+              marginBottom: "24px",
+            }}
+          >
+            Progress Is Inevitable
+          </p>
+          <h1
+            style={{
+              fontSize: "clamp(36px, 5.5vw, 80px)",
+              fontFamily: "Satoshi, sans-serif",
+              fontWeight: 500,
+              letterSpacing: "-0.03em",
+              lineHeight: 0.9,
+              color: "rgb(255,255,255)",
+            }}
+          >
+            Visualize what you'll become.
+            <br />
+            Chase it, lose it, find it,
+            <br />
+            chase it again.
+          </h1>
+          <div style={{ marginTop: "40px" }}>
             <Link
               href="https://forms.asom.space/entertheforge"
               target="_blank"
-              className="inline-block text-xs uppercase tracking-widest border border-background/30 px-6 py-3 hover:border-background transition-colors w-fit"
+              style={{
+                display: "inline-block",
+                fontSize: "13px",
+                fontFamily: "Satoshi, sans-serif",
+                fontWeight: 500,
+                letterSpacing: "0.02em",
+                textTransform: "uppercase",
+                border: "1px solid rgba(255,255,255,0.25)",
+                padding: "12px 24px",
+                color: "white",
+                transition: "border-color 0.2s",
+              }}
             >
               Be Part of The Forge
             </Link>
           </div>
-          <div className="flex flex-col gap-4">
-            <p className="text-xs uppercase tracking-widest text-background/40">Creatives in the forge</p>
-            <p className="text-xs uppercase tracking-wider leading-loose text-background/60">
-              Graphic Designers · Visual Artists · Art Directors · Fashion Designers · Narrative Designers · Multimedia · Stylists · Typographers · Graffiti Artists · UX/UI Designers · Musicians · Illustrators · 3D Artists · AI Artists
-            </p>
+        </div>
+      </section>
+
+      {/* ── ABOUT ── */}
+      <section style={{ backgroundColor: "rgb(255,255,255)", color: "rgb(15,14,14)" }}>
+        <div
+          style={{
+            maxWidth: "1800px",
+            margin: "0 auto",
+            padding: "80px 40px",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "40px",
+            alignItems: "start",
+          }}
+        >
+          {/* Left card */}
+          <div
+            style={{
+              backgroundColor: "rgb(0,0,0)",
+              borderRadius: "20px",
+              padding: "48px 40px",
+              display: "flex",
+              flexDirection: "column",
+              gap: "80px",
+            }}
+          >
+            <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
+              <h2
+                style={{
+                  fontSize: "clamp(32px, 4vw, 80px)",
+                  fontFamily: "Satoshi, sans-serif",
+                  fontWeight: 500,
+                  letterSpacing: "-0.03em",
+                  lineHeight: 0.9,
+                  color: "white",
+                }}
+              >
+                We are many, our talents are infectious. We need someone to infect.
+              </h2>
+              <p
+                style={{
+                  fontSize: "13px",
+                  fontFamily: "Satoshi, sans-serif",
+                  fontWeight: 500,
+                  letterSpacing: "-0.01em",
+                  lineHeight: "1.4",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.6)",
+                  maxWidth: "480px",
+                }}
+              >
+                ASOM is a forge of over 100 polidisciplinary artists that value the progress of modern art forms over anything. The sole purpose of ASOM is to include every niche and branch of creativity possible.
+              </p>
+              <Link
+                href="https://forms.asom.space/entertheforge"
+                target="_blank"
+                style={{
+                  display: "inline-block",
+                  fontSize: "13px",
+                  fontFamily: "Satoshi, sans-serif",
+                  fontWeight: 500,
+                  letterSpacing: "0.02em",
+                  textTransform: "uppercase",
+                  border: "1px solid rgba(255,255,255,0.25)",
+                  padding: "12px 24px",
+                  color: "white",
+                  width: "fit-content",
+                }}
+              >
+                Be Part of The Forge
+              </Link>
+            </div>
+            <div>
+              <p
+                style={{
+                  fontSize: "13px",
+                  fontFamily: "Satoshi, sans-serif",
+                  letterSpacing: "0.02em",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.4)",
+                  marginBottom: "12px",
+                }}
+              >
+                Creatives In The Forge
+              </p>
+              <p
+                style={{
+                  fontSize: "13px",
+                  fontFamily: "Satoshi, sans-serif",
+                  letterSpacing: "0.02em",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.5)",
+                  lineHeight: "2",
+                }}
+              >
+                Graphic Design<strong style={{ color: "white" }}>ERS</strong> · Visual Artist · Art Direc<strong style={{ color: "white" }}>TORS</strong> · Fashion Design<strong style={{ color: "white" }}>ERS</strong> · Narrative Design<strong style={{ color: "white" }}>ERS</strong> · Multimedia · Stylist<strong style={{ color: "white" }}>S</strong> · Typograph<strong style={{ color: "white" }}>ERS</strong> · Graffiti Artists · UX/UI Design<strong style={{ color: "white" }}>ERS</strong>
+              </p>
+            </div>
+          </div>
+
+          {/* Right — ASOM large wordmark */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              minHeight: "400px",
+            }}
+          >
+            <span
+              style={{
+                fontSize: "clamp(80px, 12vw, 180px)",
+                fontFamily: "Satoshi, sans-serif",
+                fontWeight: 700,
+                letterSpacing: "-0.03em",
+                lineHeight: 1,
+                color: "rgb(15,14,14)",
+                writingMode: "vertical-rl",
+                textOrientation: "mixed",
+                transform: "rotate(180deg)",
+                userSelect: "none",
+              }}
+            >
+              ASOM
+            </span>
           </div>
         </div>
       </section>
 
-      {/* Featured Artists */}
-      <section className="px-6 md:px-10 py-20">
-        <div className="max-w-screen-xl mx-auto">
-          <div className="flex items-end justify-between mb-10">
+      {/* ── THE ARTIST FORGE ── */}
+      <section
+        style={{
+          backgroundColor: "rgb(15,14,14)",
+          padding: "80px 40px",
+          maxWidth: "100%",
+        }}
+      >
+        <div style={{ maxWidth: "1800px", margin: "0 auto" }}>
+          {/* Header row */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "flex-end",
+              justifyContent: "space-between",
+              marginBottom: "48px",
+              paddingBottom: "40px",
+              borderBottom: "1px solid rgba(255,255,255,0.08)",
+            }}
+          >
             <div>
               <h2
-                className="font-satoshi font-bold text-white leading-none tracking-tight"
-                style={{ fontSize: "clamp(32px, 5vw, 80px)", letterSpacing: "-0.03em" }}
+                style={{
+                  fontSize: "clamp(40px, 5vw, 80px)",
+                  fontFamily: "Satoshi, sans-serif",
+                  fontWeight: 500,
+                  letterSpacing: "-0.03em",
+                  lineHeight: 0.9,
+                  color: "white",
+                }}
               >
                 The Artist Forge
               </h2>
-              <p className="mt-3 text-xs uppercase tracking-widest text-white/40">
+              <p
+                style={{
+                  marginTop: "16px",
+                  fontSize: "13px",
+                  fontFamily: "Satoshi, sans-serif",
+                  letterSpacing: "0.02em",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.4)",
+                }}
+              >
                 Check the latest entries in the ASOM archive
               </p>
             </div>
             <Link
               href="/theforge"
-              className="hidden md:inline-block text-xs uppercase tracking-widest border border-white/20 px-5 py-2.5 hover:border-white/60 transition-colors"
+              style={{
+                fontSize: "13px",
+                fontFamily: "Satoshi, sans-serif",
+                letterSpacing: "0.02em",
+                textTransform: "uppercase",
+                border: "1px solid rgba(255,255,255,0.2)",
+                padding: "10px 20px",
+                color: "white",
+                whiteSpace: "nowrap",
+              }}
             >
               See Them All
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Grid */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+              gap: "40px",
+            }}
+          >
             {featured.map((project) => (
-              <Link key={project._id} href={`/theforge/${project.slug}`} className="group flex flex-col gap-3">
-                <div className="relative aspect-square overflow-hidden rounded-xl bg-white/5">
+              <Link
+                key={project._id}
+                href={`/theforge/${project.slug}`}
+                style={{ display: "flex", flexDirection: "column", gap: "16px", textDecoration: "none" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    aspectRatio: "1 / 1",
+                    borderRadius: "12px",
+                    overflow: "hidden",
+                    backgroundColor: "rgba(255,255,255,0.05)",
+                  }}
+                >
                   {project.profilePic && (
                     <Image
-                      src={urlFor(project.profilePic).width(400).height(400).url()}
+                      src={urlFor(project.profilePic).width(500).height(500).url()}
                       alt={project.artistName}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      style={{ objectFit: "cover", transition: "transform 0.5s ease" }}
                     />
                   )}
                 </div>
                 <div>
-                  <p className="text-white font-satoshi text-sm uppercase tracking-tight">{project.artistName}</p>
-                  <p className="text-white/40 text-xs uppercase tracking-wider mt-0.5">{project.creativeRole}</p>
+                  <p
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "Satoshi, sans-serif",
+                      fontWeight: 500,
+                      letterSpacing: "-0.01em",
+                      textTransform: "uppercase",
+                      color: "white",
+                    }}
+                  >
+                    {project.artistName}
+                  </p>
+                  <p
+                    style={{
+                      marginTop: "4px",
+                      fontSize: "12px",
+                      fontFamily: "Satoshi, sans-serif",
+                      letterSpacing: "0.02em",
+                      textTransform: "uppercase",
+                      color: "rgba(255,255,255,0.4)",
+                    }}
+                  >
+                    {project.creativeRole}
+                  </p>
                 </div>
               </Link>
             ))}
           </div>
-
-          <div className="mt-8 md:hidden">
-            <Link href="/theforge" className="text-xs uppercase tracking-widest border border-white/20 px-5 py-2.5 hover:border-white/60 transition-colors">
-              See Them All
-            </Link>
-          </div>
         </div>
       </section>
+
     </div>
   );
 }
