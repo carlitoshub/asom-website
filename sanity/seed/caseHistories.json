@@ -1,0 +1,59 @@
+[
+  {
+    "_id": "ISSshCqrA",
+    "slug": "fueraroom",
+    "sortOrder": 2,
+    "eventName": "FUERAROOM",
+    "date": "2024-11-23",
+    "description": "FUERAROOM IS AN INTERACTIVE EXPERIENCE DEDICATED TO THE RELEASE OF SONEGA SONELA, FUERA'S THIRD ALBUM. THE EVENT WAS HELD AT VIA MARCO AURELIO 25, MILAN.",
+    "eventType": "POWERED BY ASOM",
+    "profilePic": "https://framerusercontent.com/images/LCy1IsvkAVpqCOm3k1s7Sa21zo.png",
+    "homepageThumbnail": "https://framerusercontent.com/images/8XE7hTdPFoxjb1pJAG0uoxNo.png",
+    "seoThumbnail": "https://framerusercontent.com/images/n0SgVACbdGz9xtRpmht7hLQ.jpeg",
+    "websiteText": "https://www.milanomusicweek.it/evento/fueraroom",
+    "websiteLink": "https://www.milanomusicweek.it/evento/fueraroom",
+    "eventGallery": {
+      "title": "Event Pictures",
+      "description": "Third Panorama was a hybrid musical event that was held in the SSC94 Studio, a 60sqm space that has always proved to be an incredible spot for meaningful expositions.",
+      "images": [
+        "https://framerusercontent.com/images/STsCeNHWqvecr8HjuBYrqlWyRU.png",
+        "https://framerusercontent.com/images/5zFmDtmaqdgMjYO5Ipw9Vw0nvQ.jpg",
+        "https://framerusercontent.com/images/6vGKf8ZZtedpMhcznSAVkctnUk.png"
+      ]
+    },
+    "videoBackground": "https://framerusercontent.com/assets/AH97r3PkciQ8358hU2fGiCIzmw.mp4",
+    "link": "https://www.instagram.com/19xix19?igsh=aHV2dnp3enZoaGhl"
+  },
+  {
+    "_id": "cAOXE6Aw6",
+    "slug": "thirdpanoramama-sssc94",
+    "sortOrder": 1,
+    "eventName": "Third Panorama",
+    "date": "2024-10-12",
+    "description": "The Third Panorama refers to those fragments of land—margins, abandoned sites, neglected spaces, and transitional zones—that remain untouched or unclaimed by direct human intervention. Unlike cultivated fields or managed parks, these areas exist without a predefined purpose, left to the spontaneous processes of nature.",
+    "eventType": "FLAGSHIP EVENT",
+    "profilePic": "https://framerusercontent.com/images/w6oKMhGWtUxzXI7fO8HJa09KPs.png",
+    "homepageThumbnail": "https://framerusercontent.com/images/taa47v00hFZCfsqVric9TYLnM.png",
+    "seoThumbnail": "https://framerusercontent.com/images/RQ91bCmaA0oPqFy6OapzQgKhrUY.jpeg",
+    "websiteText": "https://supernova191919.itch.io/",
+    "websiteLink": "https://supernova191919.itch.io/",
+    "eventGallery": {
+      "title": "Event Pictures",
+      "description": "Third Panorama was a hybrid musical event that was held in the SSC94 Studio, a 60sqm space that has always proved to be an incredible spot for meaningful expositions.",
+      "images": [
+        "https://framerusercontent.com/images/80qV3OkFLMKHMchOuc6OF5bDMw.jpg",
+        "https://framerusercontent.com/images/KdI4qLPGtFZEkSNuAv8cNsup8o.jpg",
+        "https://framerusercontent.com/images/3KmPVyrQMBgPdhXQtH0REvDSQ.jpg",
+        "https://framerusercontent.com/images/ecGprBk1hVL8fIOSNHeoQQMrfI.jpg",
+        "https://framerusercontent.com/images/TZSag7fWbSfrQ3QzBisQseHcmTQ.jpg",
+        "https://framerusercontent.com/images/Y6BriBCYqTHAueYOA1tT0DdoQ.jpg",
+        "https://framerusercontent.com/images/mIGy7D4gWyLJHt8bfpQKgeZAQw.jpg",
+        "https://framerusercontent.com/images/MWiLZMzE13bvAR1fcL57s0wNw.jpg",
+        "https://framerusercontent.com/images/Nq43EojSESxBMXse6ljLDDYe0I4.jpg",
+        "https://framerusercontent.com/images/6OfiK67JeY5MMgRyQHolr1kuwU.jpg"
+      ]
+    },
+    "videoBackground": "https://framerusercontent.com/assets/m1Iyuduc1rTO9BharwiQMRwNAdM.mp4",
+    "link": "https://www.instagram.com/19xix19?igsh=aHV2dnp3enZoaGhl"
+  }
+]
